@@ -39,6 +39,8 @@ local Window = Rayfield:CreateWindow({
 
 local PlayerTab = Window:CreateTab("Player", 4483362458) -- Title, Image
 
+local Section = PlayerTab:CreateSection("Movement")
+
 local Slider = PlayerTab:CreateSlider({
    Name = "Walk Speed",
    Range = {0, 100},
@@ -54,3 +56,5 @@ local Slider = PlayerTab:CreateSlider({
       humanoid.WalkSpeed = Value
    end,
 })
+
+
