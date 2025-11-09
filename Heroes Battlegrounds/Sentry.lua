@@ -41,7 +41,7 @@ local PlayerTab = MainWindow:CreateTab("Player", 4483362458) -- Title, Image
 
 local PlayerSection = PlayerTab:CreateSection("Movement")
 
-local PlayerSlider = Tab:CreateSlider({
+local PlayerSlider = MainTab:CreateSlider({
     Name = "WalkSpeed",
     Range = {0, 100},
     Increment = 1,
