@@ -1,4 +1,5 @@
-https://raw.githubusercontent.com/ShaanDaBest/AeroHub/refs/heads/main/Hub'
+loadstring(HttpGet("https://raw.githubusercontent.com/ShaanDaBest/AeroHub/refs/heads/main/Hub"))()
+
 
 local Window = OrionLib:MakeWindow({Name = "AeroHub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
