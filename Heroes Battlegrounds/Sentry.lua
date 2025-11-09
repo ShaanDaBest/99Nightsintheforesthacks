@@ -45,9 +45,13 @@ local Slider = PlayerTab:CreateSlider({
     Name = "WalkSpeed",
     Range = {0, 100},
     Increment = 1,
-    Suffix = "WS",
-    CurrentValue = 16,
+    Suffix = "WalkSpeed",
+    CurrentValue = 10,
     Flag = "WSslider",
-    Callback = function(a)
-      game.workspace.live.localPlayer.humanoid.WalkSpeed = a
+    Callback = function(v)
+      game.workspace.live.localPlayer.humanoid.WalkSpeed = v
+      end,
+   })
+
+local PlayerSection = PlayerTab:CreateSection("Ability")
 
